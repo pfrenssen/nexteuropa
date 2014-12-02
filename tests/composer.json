@@ -1,0 +1,10 @@
+{
+  "require": {
+    "behat/behat": "3.0.*@stable",
+    "drupal/drupal-extension": "~3.0"
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
