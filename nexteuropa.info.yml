@@ -1,0 +1,36 @@
+name: NextEuropa
+type: profile
+description: 'NextEuropa platform'
+core: 8.x
+dependencies:
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - datetime
+  - dblog
+  - editor
+  - entity_reference
+  - field_ui
+  - file
+  - image
+  - language
+  - link
+  - locale
+  - menu_ui
+  - node
+  - options
+  - path
+  - quickedit
+  - rdf
+  - shortcut
+  - taxonomy
+  - toolbar
+  - views
+  - views_ui
+themes:
+  - bartik
+  - seven
+distribution:
+  name: NextEuropa
