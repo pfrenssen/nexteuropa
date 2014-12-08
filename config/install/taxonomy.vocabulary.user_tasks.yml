@@ -1,0 +1,10 @@
+uuid: b43c667d-3d44-40c3-b200-b2f962799813
+langcode: en
+status: true
+dependencies: {  }
+name: 'User tasks'
+vid: user_tasks
+description: ''
+hierarchy: 0
+weight: 0
+third_party_settings: {  }

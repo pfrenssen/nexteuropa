@@ -1,0 +1,12 @@
+entities:
+  taxonomy_term:
+    tags:
+      language:
+        default_configuration:
+          langcode: current_interface
+          language_show: true
+    user_tasks:
+      language:
+        default_configuration:
+          langcode: current_interface
+          language_show: true

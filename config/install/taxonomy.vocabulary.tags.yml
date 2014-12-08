@@ -1,0 +1,10 @@
+uuid: 9ae55d17-ee49-42cc-9563-9995b12af788
+langcode: en
+status: true
+dependencies: {  }
+name: Tags
+vid: tags
+description: 'Generic tagging of content'
+hierarchy: 0
+weight: 0
+third_party_settings: {  }
