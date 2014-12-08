@@ -1,0 +1,23 @@
+uuid: 29e50d92-959e-4fd2-a104-4ee4eecca99a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_tasks
+    - node.type.page
+  module:
+    - taxonomy
+id: node.page.field_user_tasks
+field_name: field_user_tasks
+entity_type: node
+bundle: page
+label: 'User tasks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+third_party_settings: {  }
+field_type: taxonomy_term_reference

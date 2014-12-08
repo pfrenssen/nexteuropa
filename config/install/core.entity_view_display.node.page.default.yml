@@ -1,0 +1,29 @@
+uuid: 93571d45-f2bd-4294-8700-ffa42ef2ba48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_tags
+    - field.field.node.page.field_user_tasks
+    - node.type.page
+  module:
+    - taxonomy
+    - user
+id: node.page.default
+label: null
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  links:
+    weight: 100
+  field_tags:
+    type: taxonomy_term_reference_link
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    label: above
+hidden:
+  langcode: true
+  field_user_tasks: true
+third_party_settings: {  }
