@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_body
+    - field.field.node.page.field_page_image
     - field.field.node.page.field_tags
     - field.field.node.page.field_user_tasks
     - node.type.page
   module:
+    - image
     - taxonomy
+    - text
     - user
 id: node.page.default
 label: null
@@ -23,6 +27,20 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: above
+  field_body:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_page_image:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
 hidden:
   langcode: true
   field_user_tasks: true

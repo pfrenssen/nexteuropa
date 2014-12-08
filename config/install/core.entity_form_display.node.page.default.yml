@@ -3,12 +3,17 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_body
+    - field.field.node.page.field_page_image
     - field.field.node.page.field_tags
     - field.field.node.page.field_user_tasks
     - node.type.page
   module:
     - entity_reference
+    - image
     - path
+    - taxonomy
+    - text
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -37,15 +42,15 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 15
     settings:
       display_label: true
-    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 16
     settings:
       display_label: true
-    weight: 16
     third_party_settings: {  }
   path:
     type: path
@@ -53,14 +58,32 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_tags:
+    type: taxonomy_autocomplete
     weight: 31
-    settings: {  }
+    settings:
+      size: 60
+      autocomplete_route_name: taxonomy.autocomplete
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
   field_user_tasks:
+    type: options_select
     weight: 32
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+  field_body:
+    weight: 33
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+  field_page_image:
+    weight: 34
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
 hidden: {  }
 third_party_settings: {  }
