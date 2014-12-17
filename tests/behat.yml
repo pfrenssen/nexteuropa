@@ -14,3 +14,28 @@ default:
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
+      region_map:
+        content: '#content'
+        featured: 'div.region-featured'
+        footer: 'div.region-footer'
+        footer-firstcolumn: 'div.region-footer-firstcolumn'
+        footer-fourthcolumn: 'div.region-footer-fourthcolumn'
+        footer-secondcolumn: 'div.region-footer-secondcolumn'
+        footer-thirdcolumn: 'div.region-footer-thirdcolumn'
+        header: 'div.region-header'
+        help: 'div.region-help'
+        highlighted: 'div.region-highlighted'
+        page-bottom: 'div.region-page-bottom'
+        page-top: 'div.region-page-top'
+        primary-menu: 'div.region-primary-menu'
+        secondary-menu: 'div.region-secondary-menu'
+        sidebar-first: 'div.region-sidebar-first'
+        sidebar-second: 'div.region-sidebar-second'
+        triptych-first: 'div.region-triptych-first'
+        triptych-last: 'div.region-triptych-last'
+        triptych-middle: 'div.region-triptych-middle'
+      selectors:
+        message_selector: '.messages'
+        success_message_selector: '.messages.messages--status'
+        warning_message_selector: '.messages.messages--warning'
+        error_message_selector: '.messages.messages--error'
