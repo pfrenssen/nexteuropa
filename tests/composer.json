@@ -6,5 +6,10 @@
   "minimum-stability": "stable",
   "config": {
     "bin-dir": "bin/"
+  },
+  "autoload": {
+    "psr-4": {
+      "Drupal\\nexteuropa\\": "src"
+    }
   }
 }
