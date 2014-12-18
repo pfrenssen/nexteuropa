@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.blog.body
+    - field.field.node.blog.field_tags
+    - node.type.blog
+  module:
+    - taxonomy
+    - text
+    - user
+id: node.blog.default
+label: null
+targetEntityType: node
+bundle: blog
+mode: default
+content:
+  links:
+    weight: 100
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_tags:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: taxonomy_term_reference_link
+hidden:
+  langcode: true
+third_party_settings: {  }
