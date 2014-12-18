@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * @file
+ * Contains \FeatureContext.
+ */
+
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\Gherkin\Node\PyStringNode;
