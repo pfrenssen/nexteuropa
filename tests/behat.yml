@@ -4,6 +4,7 @@ default:
       contexts:
         - FeatureContext
         - Drupal\nexteuropa\Context\NextEuropaDrupalContext
+        - Drupal\nexteuropa\Context\BlogContext
         - Drupal\DrupalExtension\Context\DrushContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\MinkContext
