@@ -8,7 +8,6 @@
 namespace Drupal\nexteuropa\Context;
 
 use Drupal\DrupalExtension\Context\RawDrupalContext;
-use Drupal\node\Entity\Node;
 
 /**
  * Provides step definitions for the Blog feature.
