@@ -15,6 +15,13 @@ use Drupal\DrupalExtension\Context\RawDrupalContext;
 class BlogContext extends RawDrupalContext {
 
   /**
+   * The earliest creation date of a blog post, relative to the current time.
+   *
+   * This is set to -30 days, in seconds.
+   */
+  const MIN_DATE = -2592000;
+
+  /**
    * Creates n blog posts with random title and content.
    *
    * @Given (I have ):number blog post(s)
@@ -34,7 +41,7 @@ class BlogContext extends RawDrupalContext {
         'body' => $this->getRandom()->string(),
         'status' => 1,
         // Use a random creation date in the past 7 days.
-        'created' => date('Y-m-d h:i:s', rand(time()-7*24*60*60, time())),
+        'created' => date('Y-m-d h:i:s', rand(time() - self::MIN_DATE, time())),
       );
       $this->nodeCreate($blog_post);
     }
