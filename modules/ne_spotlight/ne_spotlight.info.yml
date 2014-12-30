@@ -1,0 +1,6 @@
+name: NextEuropa Spotlight
+description: Highlight content on the homepage
+package: NextEuropa
+type: module
+version: 0.0
+core: 8.x
