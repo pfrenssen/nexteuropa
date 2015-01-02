@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Main functions and hook implementations for the NextEuropa Spotlight module.
+ */
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Entity\EntityTypeInterface;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function ne_spotlight_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = array();
+
+  // Add a 'Spotlight' base field to all node types.
+  if ($entity_type->id() == 'node') {
+    $fields['ne_spotlight'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Spotlight'))
+      ->setDescription(t('Whether or not the node is highlighted on the front page.'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('form', array(
+        'type' => 'boolean_checkbox',
+        'settings' => array(
+          'display_label' => TRUE,
+        ),
+        'weight' => 15,
+      ))
+      ->setDisplayConfigurable('form', TRUE);
+  }
+
+  return $fields;
+}
