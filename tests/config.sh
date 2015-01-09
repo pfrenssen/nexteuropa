@@ -1,6 +1,7 @@
 #!/bin/bash -e
 
-# Sets the environment variables that are needed to run Behat tests.
+# Saves the environment variables that are needed to run Behat tests into a
+# configuration file.
 
 # A list of the configuration variables.
 CONFIG_VARIABLES=( "BASE_URL" "ROOT_PATH" )
