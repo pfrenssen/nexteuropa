@@ -3,9 +3,6 @@
 # Saves the environment variables that are needed to run Behat tests into a
 # configuration file.
 
-# A list of the configuration variables.
-CONFIG_VARIABLES=( "BASE_URL" "ROOT_PATH" )
-
 # Ask for configuration if the configuration file does not yet exist.
 if [ ! -f config.local ]; then
   while [ -z "$BASE_URL" ] ; do
